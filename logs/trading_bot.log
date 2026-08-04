@@ -1,0 +1,75 @@
+2026-07-29 12:55:53,427 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-29 12:56:02,120 | INFO | Placing MARKET order: BUY 0.01 BTCUSDT
+2026-07-29 12:56:02,121 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1785309962121, 'signature': 'b1fe525e9bb6244dbb07e77619f04ccc29cbcf786ab107ebaf9a1159e194147e'}
+2026-07-29 12:56:02,286 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&timestamp=1785309962121&signature=b1fe525e9bb6244dbb07e77619f04ccc29cbcf786ab107ebaf9a1159e194147e "HTTP/1.1 400 Bad Request"
+2026-07-29 12:56:02,289 | ERROR | Binance API error 400: {"code":-2019,"msg":"Margin is insufficient."}
+2026-07-29 13:53:25,183 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-29 13:53:30,999 | INFO | Placing MARKET order: BUY 1.0 BTCUSDT
+2026-07-29 13:53:31,000 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1785313411000, 'signature': '344712b05ebaa131f9cae135ca9316794878c03ada954ed0f7446521ac2467f2'}
+2026-07-29 13:53:31,354 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=1.0&timestamp=1785313411000&signature=344712b05ebaa131f9cae135ca9316794878c03ada954ed0f7446521ac2467f2 "HTTP/1.1 401 Unauthorized"
+2026-07-29 13:53:31,355 | ERROR | Binance API error 401: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-07-29 13:54:56,008 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/allOrders?symbol=BTCUSDT&limit=10&timestamp=1785313495566&signature=048fa244dfb163b9a9ef576cdc2fd4a697e2f10f306b67547af4616866643935 "HTTP/1.1 401 Unauthorized"
+2026-07-29 13:54:56,009 | ERROR | Failed to fetch order history: Client error '401 Unauthorized' for url 'https://testnet.binancefuture.com/fapi/v1/allOrders?symbol=BTCUSDT&limit=10&timestamp=1785313495566&signature=048fa244dfb163b9a9ef576cdc2fd4a697e2f10f306b67547af4616866643935'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-07-29 13:55:06,608 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-29 13:55:11,590 | INFO | Placing MARKET order: BUY 0.01 BTCUSDT
+2026-07-29 13:55:11,590 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1785313511590, 'signature': '8f2b7d6b65e693e1035d9c303918be44d1235ac23185f50708258b4ccecc7db4'}
+2026-07-29 13:55:11,954 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&timestamp=1785313511590&signature=8f2b7d6b65e693e1035d9c303918be44d1235ac23185f50708258b4ccecc7db4 "HTTP/1.1 401 Unauthorized"
+2026-07-29 13:55:11,955 | ERROR | Binance API error 401: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-07-29 13:57:12,809 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-29 13:57:18,779 | INFO | Placing MARKET order: BUY 1.0 BTCUSDT
+2026-07-29 13:57:18,779 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1785313638779, 'signature': '6674afe04a2fcc0f46c22bdecf71352f5c2de8b2e3a94f9eafb70a59a059929d'}
+2026-07-29 13:57:19,214 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=1.0&timestamp=1785313638779&signature=6674afe04a2fcc0f46c22bdecf71352f5c2de8b2e3a94f9eafb70a59a059929d "HTTP/1.1 200 OK"
+2026-07-29 13:57:19,222 | INFO | Order response received: {'orderId': 24728180086, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '1k050HXqkd5sgj1G6nRl4W', 'price': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1785313639861}
+2026-07-31 13:36:25,327 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-31 13:36:35,529 | INFO | Placing MARKET order: BUY 1.0 BTCUSDT
+2026-07-31 13:36:35,529 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1785485195529, 'signature': '82244667155fe03394639a20076debf1ec7cabec9394b6b7e91efbf4a7b16f88'}
+2026-07-31 13:36:35,730 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=1.0&timestamp=1785485195529&signature=82244667155fe03394639a20076debf1ec7cabec9394b6b7e91efbf4a7b16f88 "HTTP/1.1 200 OK"
+2026-07-31 13:36:35,732 | INFO | Order response received: {'orderId': 25427614294, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'J0LfdeyqI7BqaL4RrMumIr', 'price': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1785485195429}
+2026-07-31 15:10:31,779 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:11:05,235 | INFO | Placing LIMIT order: BUY 1.0 BTCUSDT @ 63669.0
+2026-07-31 15:11:05,241 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 63669.0, 'timeInForce': 'GTC', 'timestamp': 1785490865235, 'signature': '65aa4a7444e25a328797140915660cc8e717f562e2458253f904585cd5c3e6d2'}
+2026-07-31 15:11:05,455 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=LIMIT&quantity=1.0&price=63669.0&timeInForce=GTC&timestamp=1785490865235&signature=65aa4a7444e25a328797140915660cc8e717f562e2458253f904585cd5c3e6d2 "HTTP/1.1 400 Bad Request"
+2026-07-31 15:11:05,456 | ERROR | Binance API error 400: {"code":-2019,"msg":"Margin is insufficient."}
+2026-07-31 15:11:26,957 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:11:59,762 | INFO | Placing LIMIT order: BUY 600000.0 BTCUSDT @ 60000.0
+2026-07-31 15:11:59,762 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 600000.0, 'price': 60000.0, 'timeInForce': 'GTC', 'timestamp': 1785490919762, 'signature': '7be8d7156ac6c33d2ecda1e3c31fef9c0b7a3eded0d07c906e5c34ea431c9aa6'}
+2026-07-31 15:11:59,954 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=LIMIT&quantity=600000.0&price=60000.0&timeInForce=GTC&timestamp=1785490919762&signature=7be8d7156ac6c33d2ecda1e3c31fef9c0b7a3eded0d07c906e5c34ea431c9aa6 "HTTP/1.1 400 Bad Request"
+2026-07-31 15:11:59,956 | ERROR | Binance API error 400: {"code":-4005,"msg":"Quantity greater than max quantity."}
+2026-07-31 15:12:15,645 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:12:28,338 | INFO | Placing LIMIT order: BUY 1.0 BTCUSDT @ 600000.0
+2026-07-31 15:12:28,339 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 600000.0, 'timeInForce': 'GTC', 'timestamp': 1785490948339, 'signature': '17bf6154c299c3be843fa0fac8f623f5463f9bed34b35e8ee46f5b107b3d0029'}
+2026-07-31 15:12:28,578 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=LIMIT&quantity=1.0&price=600000.0&timeInForce=GTC&timestamp=1785490948339&signature=17bf6154c299c3be843fa0fac8f623f5463f9bed34b35e8ee46f5b107b3d0029 "HTTP/1.1 400 Bad Request"
+2026-07-31 15:12:28,578 | ERROR | Binance API error 400: {"code":-4016,"msg":"Limit price can't be higher than 66856.69."}
+2026-07-31 15:12:53,269 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:13:02,195 | INFO | Placing LIMIT order: BUY 1.0 BTCUSDT @ 60000.0
+2026-07-31 15:13:02,195 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 60000.0, 'timeInForce': 'GTC', 'timestamp': 1785490982195, 'signature': 'dfec1e37c8983e97536dfa7c8c95841750fb6c03f20211511904caac0d3d76e1'}
+2026-07-31 15:13:02,470 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=LIMIT&quantity=1.0&price=60000.0&timeInForce=GTC&timestamp=1785490982195&signature=dfec1e37c8983e97536dfa7c8c95841750fb6c03f20211511904caac0d3d76e1 "HTTP/1.1 400 Bad Request"
+2026-07-31 15:13:02,471 | ERROR | Binance API error 400: {"code":-2019,"msg":"Margin is insufficient."}
+2026-07-31 15:15:38,297 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:15:58,398 | INFO | Placing LIMIT order: BUY 1.0 BTCUSDT @ 5000.0
+2026-07-31 15:15:58,398 | INFO | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 5000.0, 'timeInForce': 'GTC', 'timestamp': 1785491158398, 'signature': 'a32d35f07cd68eaa389b04154babda1b40966ab27867e71c2ee1692f8463c580'}
+2026-07-31 15:15:58,563 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=LIMIT&quantity=1.0&price=5000.0&timeInForce=GTC&timestamp=1785491158398&signature=a32d35f07cd68eaa389b04154babda1b40966ab27867e71c2ee1692f8463c580 "HTTP/1.1 200 OK"
+2026-07-31 15:15:58,565 | INFO | Order response received: {'orderId': 25476714749, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'jKvLCiHdqJHhkVBFG0Rvao', 'price': '5000.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1785491158133}
+2026-07-31 15:16:58,993 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTC "HTTP/1.1 400 Bad Request"
+2026-07-31 15:16:58,995 | ERROR | Failed to fetch price for BTC: Client error '400 Bad Request' for url 'https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=BTC'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-07-31 15:17:17,582 | INFO | Placing MARKET order: BUY 1.0 BTC
+2026-07-31 15:17:17,583 | INFO | Sending order request: {'symbol': 'BTC', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1785491237583, 'signature': 'e70bd52d469367923c7b39805d0ebe2a157e03d7386ce332ac6fc9d53e304297'}
+2026-07-31 15:17:17,736 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=BTC&side=BUY&type=MARKET&quantity=1.0&timestamp=1785491237583&signature=e70bd52d469367923c7b39805d0ebe2a157e03d7386ce332ac6fc9d53e304297 "HTTP/1.1 400 Bad Request"
+2026-07-31 15:17:17,737 | ERROR | Binance API error 400: {"code":-1121,"msg":"Invalid symbol."}
+2026-07-31 15:20:04,142 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=OGUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:20:13,425 | INFO | Placing MARKET order: BUY 1.0 OGUSDT
+2026-07-31 15:20:13,425 | INFO | Sending order request: {'symbol': 'OGUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1785491413425, 'signature': '42c2b027853ec3d31e5b072033da18e35e09706a6d34bfd364bbdf723c211a0f'}
+2026-07-31 15:20:13,575 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=OGUSDT&side=BUY&type=MARKET&quantity=1.0&timestamp=1785491413425&signature=42c2b027853ec3d31e5b072033da18e35e09706a6d34bfd364bbdf723c211a0f "HTTP/1.1 400 Bad Request"
+2026-07-31 15:20:13,576 | ERROR | Binance API error 400: {"code":-4164,"msg":"Order's notional must be no smaller than 5 (unless you choose reduce only)."}
+2026-07-31 15:21:16,207 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=OGUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:22:02,607 | INFO | Placing MARKET order: BUY 1.0 OGUSDT
+2026-07-31 15:22:02,608 | INFO | Sending order request: {'symbol': 'OGUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1785491522608, 'signature': '69adb589db792120fc7738aa2ec2b2c1358a4a32e6cb124374cd9104da002f7c'}
+2026-07-31 15:22:02,771 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=OGUSDT&side=BUY&type=MARKET&quantity=1.0&timestamp=1785491522608&signature=69adb589db792120fc7738aa2ec2b2c1358a4a32e6cb124374cd9104da002f7c "HTTP/1.1 400 Bad Request"
+2026-07-31 15:22:02,772 | ERROR | Binance API error 400: {"code":-4164,"msg":"Order's notional must be no smaller than 5 (unless you choose reduce only)."}
+2026-07-31 15:22:51,923 | INFO | HTTP Request: GET https://testnet.binancefuture.com/fapi/v1/ticker/price?symbol=OGUSDT "HTTP/1.1 200 OK"
+2026-07-31 15:22:55,669 | INFO | Placing MARKET order: BUY 10.0 OGUSDT
+2026-07-31 15:22:55,669 | INFO | Sending order request: {'symbol': 'OGUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 10.0, 'timestamp': 1785491575669, 'signature': '87bfb8569e4868ef9047b4841041d7b04bd1a5cec570449f8856e124940786d1'}
+2026-07-31 15:22:55,836 | INFO | HTTP Request: POST https://testnet.binancefuture.com/fapi/v1/order?symbol=OGUSDT&side=BUY&type=MARKET&quantity=10.0&timestamp=1785491575669&signature=87bfb8569e4868ef9047b4841041d7b04bd1a5cec570449f8856e124940786d1 "HTTP/1.1 200 OK"
+2026-07-31 15:22:55,837 | INFO | Order response received: {'orderId': 159988524, 'symbol': 'OGUSDT', 'status': 'NEW', 'clientOrderId': 'gjsAGZNxmCmjkPfMv5AEk1', 'price': '0.000000', 'origQty': '10.00', 'executedQty': '0.00', 'cumQty': '0.00', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.000000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1785491575407}
